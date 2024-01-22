@@ -19,7 +19,6 @@ Landmarks were identified using a semi-automatic pathway visualized below
 
 During image preprocessing, images were denoised using FFDNet, a flexible deep learning based denoiser (Zhang et al., [2018]). Automatic segmentation of the liver was done using DirectORGANS (SIEMENS, [2021]). Liver vessel segmentation was accomplished using the Frangi vesselness filter (Frangi et al., [1998]) and hysteresis thresholding methods (Medina-Carnicer et al., [2009]). Bifurcations (landmarks) were detected directly on the skeleton of the vessel tree. The approximate registration is done using PTVReg (Vishnevskiy et al., [2017]). Links to the sources listed are provided at the bottom of this document.
 
-![image](https://github.com/deshanyang/Liver-DIR-QA/assets/50779449/39a6f658-91ca-4a1d-b9f5-7c2e012679db)
 
 
 ## Use of Dataset
@@ -31,7 +30,7 @@ The second format is a folder containing the imaging data in the NIfTI file form
 ### Visualizing Landmarks
 For those interested in looking at the landmark pairs available in this dataset, we recommend the use of MatchGui (Deshan Yang, 2017). MatchGui is a Matlab based tool and allows the user to load in both CT images as well as the landmark locations for each image. In this way, users can visualize each landmark pair individually, with up-sampling tools that can help inform the user if the dataset is right for their purposes. There are also functions allowing the user to flag certain landmarks and adjust them if they feel necessary.
 
-![image](https://github.com/deshanyang/Lung-DIR-QA/assets/50779449/65ab5db5-247e-4def-8510-244f4862ff31)
+![image](https://github.com/deshanyang/Liver-DIR-QA/assets/50779449/39a6f658-91ca-4a1d-b9f5-7c2e012679db)
 
 A screenshot from the MatchGUI interface showing a landmark pair from the dataset.
 
