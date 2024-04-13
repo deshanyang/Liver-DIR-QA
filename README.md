@@ -1,7 +1,9 @@
-# Liver-DIR Validation
-Dataset of CT image pairs with liver vessel landmarks for deformable image registration (DIR) algorithm verification and quality assurance (QA).
+# Liver-DIR Validation Dataset
+A dataset of CT image pairs with liver vessel landmarks for deformable image registration (DIR) algorithm verification and quality assurance (QA).
+The landmark dataset introduced here is the first collection of large-scale liver CT DIR landmarks prepared on real patient images. This dataset can provide researchers with a dense set of ground truth benchmarks for the quantitative evaluation of DIR algorithms within the liver. 
 
-![image](https://github.com/deshanyang/Liver-DIR-QA/assets/50779449/bc890be6-bc43-4dd5-89ce-27f4a6405ee4)
+![image](https://github.com/deshanyang/Liver-DIR-QA/assets/157416527/76d78671-fd27-47a0-95e3-1bce961a7e1d)
+
 
 
 
