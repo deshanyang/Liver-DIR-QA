@@ -14,6 +14,10 @@ This dataset contains 30 different cases of abdominal-pelvis CT image pairs, wit
 
 We hope to publish the results of this study in a dataset article. Due to the size of the image files, the full dataset is saved on our publicly available Zenodo repository at . However, one example image pair with landmarks is included within this GitHub repository, along with a tutorial in loading and processing this data, to assist researchers in getting started with the dataset. Please see the tutorial folder in this GitHub for more information.
 
+-The presented dataset comprises 30 pairs of intra-patient abdominal-pelvis CT images with various clinical quality. \<br>
+Across the 30 cases, a total of 2028 landmark pairs were labeled, averaging ~68 pairs per case, far exceeding previous liver DIR evaluation reports.
+
+
 ## Landmark Identification and Verification
 Landmarks were identified using a semi-automatic pathway visualized below
 
