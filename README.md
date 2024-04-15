@@ -8,14 +8,16 @@ The landmark dataset introduced here is the first collection of large-scale live
 
 
 
-
 ## Dataset Overview
 This dataset contains 30 different cases of abdominal-pelvis CT image pairs, with a high number of liver vessel bifurcation landmark pairs identified in each case. These landmarks can be used for DIR algorithm validation and quality assurance. Images are obtained from several publicly available image repositories as well as clinical scans from Barnes Jewish Hospital.
 
-We hope to publish the results of this study in a dataset article. Due to the size of the image files, the full dataset is saved on our publicly available Zenodo repository at . However, one example image pair with landmarks is included within this GitHub repository, along with a tutorial in loading and processing this data, to assist researchers in getting started with the dataset. Please see the tutorial folder in this GitHub for more information.
+We hope to publish the results of this study in a dataset article. Due to the size of the image files, the full dataset is saved on our publicly available Zenodo repository at https://zenodo.org/records/10553242. However, one example image pair with landmarks is included within this GitHub repository, along with a tutorial in loading and processing this data, to assist researchers in getting started with the dataset. Please see the tutorial folder in this GitHub for more information.
 
--The presented dataset comprises 30 pairs of intra-patient abdominal-pelvis CT images with various clinical quality. <br>
-Across the 30 cases, a total of 2028 landmark pairs were labeled, averaging ~68 pairs per case, far exceeding previous liver DIR evaluation reports.
+- The presented dataset comprises 30 pairs of intra-patient abdominal-pelvis CT images with various clinical quality. <br>
+- Across the 30 cases, a total of 2028 landmark pairs were labeled, averaging ~68 pairs per case, far exceeding previous liver DIR evaluation reports.<br>
+- The mean and standard deviations of the TREs were 0.64±0.40 mm evaluated using digital phantoms.<br>
+- Landmark identification and pairing accuracy underwent rigorous manual validation by two observers.<br>
+
 
 
 ## Landmark Identification and Verification
@@ -31,9 +33,9 @@ During image preprocessing, images were denoised using FFDNet, a flexible deep l
 
 ## Use of Dataset
 ### Dataset Organization
-The full dataset, available on zenodo, is organized into two formats. The first is a folder containing 30 .mat files. In each of these files is the imaging data for both CT images in a pair, the landmark locations for each image, and the voxel sizes of each image. The imaging data in the .mat files is organized in the dimensions [coronal, sagittal, axial], with the order of the slices in accordance with DICOM formatting [anterior:posterior, right:left, inferior:superior]. Landmark locations are saved as 3 columns of pixel indices, with each column corresponding to the dimensions of the image, in the same order. Image intensity values are saved as Hounsfield units shifted by 1000.
+The full dataset, available on zenodo (https://zenodo.org/records/10553242), is organized into NIfTI file format. The dataset folder contains the image data in the NIfTI file format, with the landmarks stored in a text file. Each image and its landmarks are stored in its own file and are labeled by each case. Imaging and landmark data dimensions are in the order [sagittal, coronal, axial], with slice order also in accordance with the DICOM coordinate system. Landmark locations are saved as 3 columns of pixel indices, with each column corresponding to the dimensions of the image, in the same order. Image intensity values are still Hounsfield units shifted by 1000.
 
-The second format is a folder containing the imaging data in the NIfTI file format, with the landmarks stored in a text file. Each image and its landmarks are stored in its own file and are labeled by each case. Imaging and landmark data dimensions are in the order [sagittal, coronal, axial], with slice order also in accordance with the DICOM coordinate system. Landmark locations are saved as 3 columns of pixel indices, with each column corresponding to the dimensions of the image, in the same order. Image intensity values are still Hounsfield units shifted by 1000.
+The first is a folder containing 30 .mat files. In each of these files is the imaging data for both CT images in a pair, the landmark locations for each image, and the voxel sizes of each image. The imaging data in the .mat files is organized in the dimensions [coronal, sagittal, axial], with the order of the slices in accordance with DICOM formatting [anterior:posterior, right:left, inferior:superior]. Landmark locations are saved as 3 columns of pixel indices, with each column corresponding to the dimensions of the image, in the same order. Image intensity values are saved as Hounsfield units shifted by 1000.
 
 ### Visualizing Landmarks
 For those interested in looking at the landmark pairs available in this dataset, we recommend the use of MatchGui (Deshan Yang, 2017). MatchGui is a Matlab based tool and allows the user to load in both CT images as well as the landmark locations for each image. In this way, users can visualize each landmark pair individually, with up-sampling tools that can help inform the user if the dataset is right for their purposes. There are also functions allowing the user to flag certain landmarks and adjust them if they feel necessary.
