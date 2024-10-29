@@ -10,7 +10,7 @@
 
 %Loading images
 img1_nifti = niftiread('case1_img1.nii'); % img1
-img2_nifti = niftiread('case1_img2.nii'); % img2
+img2_nifti = niftiread('case2_img2.nii'); % img2
 %Permute the image orientation for matlab visualization
 img1_nifti = permute(img1_nifti, [2 1 3]);
 img2_nifti = permute(img2_nifti, [2 1 3]);
