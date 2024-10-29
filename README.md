@@ -48,7 +48,7 @@ For more extensive instructions on how to use matchgui, please refer to the tuto
 ### Citing
 The results of this study are publicly available for use in DIR algorithm verification. If you used our work in any way, please cite our paper.
 
-If you have any further questions about the dataset, please reach out to us at zhendong.zhang@duke.edu. Thank you!
+If you have any further questions about the dataset, please reach out to us at deshan.yang@duke.edu. Thank you!
 
 ## Sources
 FFDNet- [https://arxiv.org/abs/1710.04026](https://github.com/cszn/FFDNet)
